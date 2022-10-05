@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="css/html.css">
+    <link href="../static/img/222.jpg" rel="shortcut icon" type="image/x-icon">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r108/three.min.js"></script>
+    <!-- <script src="js/script.js"></script> -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>AI_speaker</title>
+</head>
+<body>
+    <style>
+        
+        body{
+            background-color: black;
+            overflow: hidden;
+        }
+        #H1{
+            font-family: 'Staatliches', cursive;
+            color: #F1C164;
+            text-shadow: 5px 5px #2D63A7;
+            margin: 0;
+            text-decoration: underline;
+            font-size: 20px;
+            text-align: center;
+        }
+        canvas {
+            /* position: absolute; */
+            top:0;
+            left:0;
+            /* z-index:100; */
+
+
+            /* -ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=50)"; */
+            /* filter: alpha(opacity=50); */
+            /* -moz-opacity:0.5; */
+            /* -khtml-opacity: 0.5; */
+            opacity: 0.5;    
+        }
+        .list{
+            width: 600px;
+            height: 150px;
+            border: 1px solid white;
+            color: white;
+        }
+    </style>
+    <div id="H1">
+        <h1>AI-Speeker</h1>
+    </div>
+    <center>
+        <div class="list">
+            <audio controls autoplay="true" loop="true" src="../static/audio/voice.mp3" tyoe="audio/mpeg">
+            </audio><br>
+            {{questioners}}<br>
+            {{AI}}
+            
+        </div>
+    </center>
+    
+    <canvas id="myCanvas"></canvas>
+    <script src="../static/js/script.js"></script>
+    
+</body>
+</html>
